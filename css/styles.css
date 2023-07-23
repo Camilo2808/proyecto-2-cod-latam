@@ -1,0 +1,165 @@
+/* En este archivo escriban su CSS */
+
+/* Fonts */
+/* Importar aquí la font */
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador.
+*/
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+/* main {
+  max-width: 1200px;
+  margin: auto;
+} */
+
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+    line-height: 1.2;
+  }
+  body {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    background-color: #fbfbfb;
+  }
+  
+  /* Para quitar los puntos a los items de listas */
+  ul {
+    list-style: none;
+  }
+  
+  /* Para que los enlaces hereden el color de texto y no tengan subrayado */
+  a {
+    text-decoration: none;
+    color: inherit;
+  
+    margin-bottom: 33px;
+    margin-right: 33px;
+  }
+  
+  header {
+    top: 0;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 90px;
+  }
+  
+  section {
+    padding: 10px;
+    min-height: 50vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .logo_central {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-top: 20%;
+  }
+  .texto {
+    margin: 50px;
+    display: flex;
+  
+    justify-content: center;
+  }
+  
+  .fondo-color {
+    border-radius: 20px;
+    margin: 10px;
+    background-color: rgba(175, 89, 158, 0.3);
+    color: #0f0f0f;
+    display: grid;
+    align-items: center;
+  }
+  div a {
+    background-color: #af599e;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+  
+  footer {
+    background-color: #af599e;
+    color: #fbfbfb;
+  }
+  .pie {
+    height: 90px;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding-top: 35px;
+  }
+  
+  section img {
+    height: 130px;
+    padding: 20px;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para el botón */
+.linkedin-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #0077B5;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Agregamos una transición para que el cambio de color sea suave */
+}
+
+/* Estilos cuando el mouse está sobre el botón */
+.linkedin-button:hover {
+  background-color: #005FAB;
+  cursor: pointer; /* Cambiamos el cursor a una mano para indicar que es un enlace */
+}
